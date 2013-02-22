@@ -1,0 +1,11 @@
+#
+# !!!WARNING!!!  Controlled by puppet.
+#                Any changes will be overwritten.
+#
+# provides UDP syslog reception
+$ModLoad imudp
+$UDPServerRun 514
+
+# provides TCP syslog reception
+$ModLoad imtcp
+$InputTCPServerRun 514
